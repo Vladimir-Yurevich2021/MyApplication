@@ -47,6 +47,28 @@
     android:text="@string/b_1"
     android:textSize="@dimen/text_size"
     android:layout_margin="3dp"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_2"
+            android:text="@string/b_2"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="3dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_3"
+            android:text="@string/b_3"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="3dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_dec"
+            android:text="@string/b_dec"
+            android:textSize="@dimen/text_size"
+            android:layout_margin="3dp"/>
 </TableRow>
 
 </TableLayout>

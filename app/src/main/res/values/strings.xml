@@ -2,4 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="tv_0">0</string>
     <string name="b_1">1</string>
+    <string name="b_2">2</string>
+    <string name="b_3">3</string>
+    <string name="b_dec">-</string>
 </resources>
