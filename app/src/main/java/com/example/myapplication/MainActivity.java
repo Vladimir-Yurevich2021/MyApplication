@@ -32,7 +32,119 @@ private String tb_1;
         Button button_ravn=findViewById(R.id.b_ravn);
         Button button_s=findViewById(R.id.b_s);
         Button button_sum=findViewById(R.id.b_sum);
+button_0.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
 
+    }
+});
+button_1.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
 
+    }
+});
+button_2.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_4.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_5.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_6.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_7.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_8.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_9.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_c.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_dec.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_del.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_delete.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_point.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_proc.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_ravn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_s.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
+button_sum.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+});
     }
 }
