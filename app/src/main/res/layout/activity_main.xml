@@ -43,32 +43,65 @@
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/b_1"
-    android:text="@string/b_1"
+    android:id="@+id/b_c"
+    android:text="@string/b_c"
     android:textSize="@dimen/text_size"
     android:layout_margin="3dp"/>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b_2"
-            android:text="@string/b_2"
+            android:id="@+id/b_del"
+            android:text="@string/b_del"
             android:textSize="@dimen/text_size"
             android:layout_margin="3dp"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b_3"
-            android:text="@string/b_3"
+            android:id="@+id/b_s"
+            android:text="@string/b_s"
             android:textSize="@dimen/text_size"
             android:layout_margin="3dp"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b_dec"
-            android:text="@string/b_dec"
+            android:id="@+id/b_delete"
+            android:text="@string/b_delete"
             android:textSize="@dimen/text_size"
             android:layout_margin="3dp"/>
 </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_1"
+                android:text="@string/b_1"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
 
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_2"
+                android:text="@string/b_2"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_3"
+                android:text="@string/b_3"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_dec"
+                android:text="@string/b_dec"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+    </TableRow>
 </TableLayout>

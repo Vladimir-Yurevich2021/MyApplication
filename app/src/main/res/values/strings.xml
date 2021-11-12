@@ -5,4 +5,8 @@
     <string name="b_2">2</string>
     <string name="b_3">3</string>
     <string name="b_dec">-</string>
+    <string name="b_c">c</string>
+    <string name="b_del">/</string>
+    <string name="b_s">*</string>
+    <string name="b_delete">del</string>
 </resources>
