@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -13,6 +14,8 @@ private String tb_1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView en_numb=findViewById(R.id.tv_enter_number);
+        TextView rezult=findViewById(R.id.rezult);
         Button button_0=findViewById(R.id.b_0);
         Button button_1=findViewById(R.id.b_1);
         Button button_2=findViewById(R.id.b_2);
