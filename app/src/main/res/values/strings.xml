@@ -13,4 +13,8 @@
     <string name="b_5">5</string>
     <string name="b_6">6</string>
     <string name="b_sum">+</string>
+    <string name="b_7">7</string>
+    <string name="b_8">8</string>
+    <string name="b_9">9</string>
+    <string name="b_proc">%</string>
 </resources>
