@@ -172,4 +172,33 @@
                 android:textSize="@dimen/text_size"
                 android:layout_margin="3dp"/>
     </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_0"
+                android:text="@string/b_0"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_point"
+                android:text="@string/b_point"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+        <Button
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_ravn"
+                android:text="@string/b_ravn"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+
+    </TableRow>
 </TableLayout>

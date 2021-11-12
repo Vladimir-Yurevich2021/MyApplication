@@ -17,4 +17,7 @@
     <string name="b_8">8</string>
     <string name="b_9">9</string>
     <string name="b_proc">%</string>
+    <string name="b_0">0</string>
+    <string name="b_point">.</string>
+    <string name="b_ravn">=</string>
 </resources>
