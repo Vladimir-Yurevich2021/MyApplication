@@ -9,4 +9,8 @@
     <string name="b_del">/</string>
     <string name="b_s">*</string>
     <string name="b_delete">del</string>
+    <string name="b_4">4</string>
+    <string name="b_5">5</string>
+    <string name="b_6">6</string>
+    <string name="b_sum">+</string>
 </resources>

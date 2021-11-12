@@ -104,4 +104,39 @@
                 android:textSize="@dimen/text_size"
                 android:layout_margin="3dp"/>
     </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_4"
+                android:text="@string/b_4"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_5"
+                android:text="@string/b_5"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_6"
+                android:text="@string/b_6"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_sum"
+                android:text="@string/b_sum"
+                android:textSize="@dimen/text_size"
+                android:layout_margin="3dp"/>
+    </TableRow>
+
 </TableLayout>
