@@ -51,7 +51,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/b_del"
+            android:id="@+id/b_division"
             android:text="@string/b_division"
             android:textSize="@dimen/text_size"
             android:layout_margin="3dp"/>
@@ -99,7 +99,7 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/b_dec"
+                android:id="@+id/b_subtraction"
                 android:text="@string/b_subtraction"
                 android:textSize="@dimen/text_size"
                 android:layout_margin="3dp"/>
@@ -133,7 +133,7 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/b_sum"
+                android:id="@+id/b_addition"
                 android:text="@string/b_addition"
                 android:textSize="@dimen/text_size"
                 android:layout_margin="3dp"/>
@@ -195,7 +195,7 @@
                 android:layout_span="2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/b_ravn"
+                android:id="@+id/b_equally"
                 android:text="@string/b_equally"
                 android:textSize="@dimen/text_size"
                 android:layout_margin="3dp"/>
