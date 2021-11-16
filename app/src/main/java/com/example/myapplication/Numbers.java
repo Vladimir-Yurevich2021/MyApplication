@@ -4,45 +4,15 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Numbers implements Parcelable {
-    private int number1;
-    private int number2;
-    private int number_rezult;
+    private double number1;
+    private double number2;
+    private double number_rezult;
 
     Numbers(){
         number1=0;
         number2=0;
         number_rezult=0;
 
-    }
-
-    public int getNumber1() {
-        return number1;
-    }
-
-    public void setNumber1(int number1) {
-        this.number1 = number1;
-    }
-
-    public int getNumber2() {
-        return number2;
-    }
-
-    public void setNumber2(int number2) {
-        this.number2 = number2;
-    }
-
-    public int getNumber_rezult() {
-        return number_rezult;
-    }
-
-    public void setNumber_rezult(int number_rezult) {
-        this.number_rezult = number_rezult;
-    }
-
-    protected Numbers(Parcel in) {
-        number1 = in.readInt();
-        number2 = in.readInt();
-        number_rezult = in.readInt();
     }
 
     public static final Creator<Numbers> CREATOR = new Creator<Numbers>() {
@@ -56,6 +26,38 @@ public class Numbers implements Parcelable {
             return new Numbers[size];
         }
     };
+
+    public double getNumber1() {
+        return number1;
+    }
+
+    public void setNumber1(double number1) {
+        this.number1 = number1;
+    }
+
+    public double getNumber2() {
+        return number2;
+    }
+
+    public void setNumber2(double number2) {
+        this.number2 = number2;
+    }
+
+    public double getNumber_rezult() {
+        return number_rezult;
+    }
+
+    public void setNumber_rezult(double number_rezult) {
+        this.number_rezult = number_rezult;
+    }
+
+    protected Numbers(Parcel in) {
+        number1 = in.readInt();
+        number2 = in.readInt();
+        number_rezult = in.readInt();
+    }
+
+
 
     public void addition(){
         number_rezult=number1+number2;
@@ -74,6 +76,7 @@ public class Numbers implements Parcelable {
         }else number_rezult=0;
     }
 
+
     @Override
     public int describeContents() {
         return 0;
@@ -81,8 +84,8 @@ public class Numbers implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(number1);
-        parcel.writeInt(number2);
-        parcel.writeInt(number_rezult);
+        parcel.writeDouble(number1);
+        parcel.writeDouble(number2);
+        parcel.writeDouble(number_rezult);
     }
 }

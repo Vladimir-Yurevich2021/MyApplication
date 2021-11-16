@@ -76,4 +76,11 @@ public class MainActivity extends AppCompatActivity {
         button_equally = findViewById(R.id.b_equally);
     }
 
+
+View.OnClickListener clicbutton_0=new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+
+    }
+};
 }
