@@ -49,22 +49,22 @@ public class MainActivity extends AppCompatActivity {
         button_0.setOnClickListener(clicbutton_0);
         button_1 = findViewById(R.id.b_1);
         button_1.setOnClickListener(clicbutton_1);
-//        button_2 = findViewById(R.id.b_2);
-//        button_2.setOnClickListener(clicbutton_2);
-//        button_3 = findViewById(R.id.b_3);
-//        button_3.setOnClickListener(clicbutton_3);
-//        button_4 = findViewById(R.id.b_4);
-//        button_4.setOnClickListener(clicbutton_4);
-//        button_5 = findViewById(R.id.b_5);
-//        button_5.setOnClickListener(clicbutton_5);
-//        button_6 = findViewById(R.id.b_6);
-//        button_6.setOnClickListener(clicbutton_6);
-//        button_7 = findViewById(R.id.b_7);
-//        button_7.setOnClickListener(clicbutton_7);
-//        button_8 = findViewById(R.id.b_8);
-//        button_8.setOnClickListener(clicbutton_8);
-//        button_9 = findViewById(R.id.b_9);
-//        button_9.setOnClickListener(clicbutton_9);
+        button_2 = findViewById(R.id.b_2);
+        button_2.setOnClickListener(clicbutton_2);
+        button_3 = findViewById(R.id.b_3);
+        button_3.setOnClickListener(clicbutton_3);
+        button_4 = findViewById(R.id.b_4);
+        button_4.setOnClickListener(clicbutton_4);
+        button_5 = findViewById(R.id.b_5);
+        button_5.setOnClickListener(clicbutton_5);
+        button_6 = findViewById(R.id.b_6);
+        button_6.setOnClickListener(clicbutton_6);
+        button_7 = findViewById(R.id.b_7);
+        button_7.setOnClickListener(clicbutton_7);
+        button_8 = findViewById(R.id.b_8);
+        button_8.setOnClickListener(clicbutton_8);
+        button_9 = findViewById(R.id.b_9);
+        button_9.setOnClickListener(clicbutton_9);
 //        button_division = findViewById(R.id.b_division);
 //        button_multiplication = findViewById(R.id.b_multiplication);
 //        button_addition = findViewById(R.id.b_addition);
@@ -95,6 +95,54 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             setTextviewandsetnumber1(button_1);
+        }
+    };
+    View.OnClickListener clicbutton_2 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_2);
+        }
+    };
+    View.OnClickListener clicbutton_3 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_3);
+        }
+    };
+    View.OnClickListener clicbutton_4 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_4);
+        }
+    };
+    View.OnClickListener clicbutton_5 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_5);
+        }
+    };
+    View.OnClickListener clicbutton_6 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_6);
+        }
+    };
+    View.OnClickListener clicbutton_7 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_7);
+        }
+    };
+    View.OnClickListener clicbutton_8 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_8);
+        }
+    };
+    View.OnClickListener clicbutton_9 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_9);
         }
     };
 }
