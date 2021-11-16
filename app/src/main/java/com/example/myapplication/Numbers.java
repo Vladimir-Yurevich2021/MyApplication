@@ -11,8 +11,20 @@ public class Numbers {
         number_rezult=0;
 
     }
-    public void addition(){}
-    public void subtraction(){}
-    public void multiplication(){}
-    public void division(){}
+    public void addition(){
+        number_rezult=number1+number2;
+    }
+    public void subtraction(){
+        number_rezult=number1-number2;
+    }
+    public void multiplication(){
+        if (number1!=0||number2!=0){
+            number_rezult=number1*number2;
+        }else number_rezult=0;
+    }
+    public void division(){
+        if (number1!=0||number2!=0){
+            number_rezult=number1/number2;
+        }else number_rezult=0;
+    }
 }
