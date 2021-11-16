@@ -49,38 +49,52 @@ public class MainActivity extends AppCompatActivity {
         button_0.setOnClickListener(clicbutton_0);
         button_1 = findViewById(R.id.b_1);
         button_1.setOnClickListener(clicbutton_1);
-        button_2 = findViewById(R.id.b_2);
-        button_2.setOnClickListener(clicbutton_2);
-        button_3 = findViewById(R.id.b_3);
-        button_3.setOnClickListener(clicbutton_3);
-        button_4 = findViewById(R.id.b_4);
-        button_4.setOnClickListener(clicbutton_4);
-        button_5 = findViewById(R.id.b_5);
-        button_5.setOnClickListener(clicbutton_5);
-        button_6 = findViewById(R.id.b_6);
-        button_6.setOnClickListener(clicbutton_6);
-        button_7 = findViewById(R.id.b_7);
-        button_7.setOnClickListener(clicbutton_7);
-        button_8 = findViewById(R.id.b_8);
-        button_8.setOnClickListener(clicbutton_8);
-        button_9 = findViewById(R.id.b_9);
-        button_9.setOnClickListener(clicbutton_9);
-        button_division = findViewById(R.id.b_division);
-        button_multiplication = findViewById(R.id.b_multiplication);
-        button_addition = findViewById(R.id.b_addition);
-        button_subtraction = findViewById(R.id.b_subtraction);
-        button_c = findViewById(R.id.b_c);
-        button_delete = findViewById(R.id.b_delete);
-        button_proc = findViewById(R.id.b_proc);
-        button_point = findViewById(R.id.b_point);
-        button_equally = findViewById(R.id.b_equally);
+//        button_2 = findViewById(R.id.b_2);
+//        button_2.setOnClickListener(clicbutton_2);
+//        button_3 = findViewById(R.id.b_3);
+//        button_3.setOnClickListener(clicbutton_3);
+//        button_4 = findViewById(R.id.b_4);
+//        button_4.setOnClickListener(clicbutton_4);
+//        button_5 = findViewById(R.id.b_5);
+//        button_5.setOnClickListener(clicbutton_5);
+//        button_6 = findViewById(R.id.b_6);
+//        button_6.setOnClickListener(clicbutton_6);
+//        button_7 = findViewById(R.id.b_7);
+//        button_7.setOnClickListener(clicbutton_7);
+//        button_8 = findViewById(R.id.b_8);
+//        button_8.setOnClickListener(clicbutton_8);
+//        button_9 = findViewById(R.id.b_9);
+//        button_9.setOnClickListener(clicbutton_9);
+//        button_division = findViewById(R.id.b_division);
+//        button_multiplication = findViewById(R.id.b_multiplication);
+//        button_addition = findViewById(R.id.b_addition);
+//        button_subtraction = findViewById(R.id.b_subtraction);
+//        button_c = findViewById(R.id.b_c);
+//        button_delete = findViewById(R.id.b_delete);
+//        button_proc = findViewById(R.id.b_proc);
+//        button_point = findViewById(R.id.b_point);
+//        button_equally = findViewById(R.id.b_equally);
     }
 
-
-View.OnClickListener clicbutton_0=new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-
+    public void setTextviewandsetnumber1(Button button) {
+        double number = numbers.getNumber1();
+        if (number != 0) {
+            text_enter.append(button.getText());
+            numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
+        } else text_enter.setText(button.getText());
+        numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
     }
-};
+
+    View.OnClickListener clicbutton_0 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_0);
+        }
+    };
+    View.OnClickListener clicbutton_1 = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextviewandsetnumber1(button_1);
+        }
+    };
 }
