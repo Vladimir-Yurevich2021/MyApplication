@@ -13,4 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="MyStyle" parent="Theme.MyApplication">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+    </style>
 </resources>
