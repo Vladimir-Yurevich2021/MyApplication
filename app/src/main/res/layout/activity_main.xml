@@ -6,7 +6,8 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:theme="@style/MyStyle">
 
     <TableRow
             android:layout_height="match_parent"
@@ -14,7 +15,7 @@
                android:gravity="center|end">
 
         <TextView
-                android:textSize="@dimen/text_size"
+
                 android:id="@+id/tv_enter_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +28,7 @@
         android:layout_width="wrap_content"
         android:gravity="center|end">
         <TextView
-                android:textSize="@dimen/text_size"
+
                 android:id="@+id/rezult"
                 android:gravity="center|end"
                 android:layout_width="wrap_content"
@@ -45,30 +46,30 @@
     android:layout_height="wrap_content"
     android:id="@+id/b_c"
     android:text="@string/b_c"
-    android:textSize="@dimen/text_size"
-    android:layout_margin="@dimen/margin"/>
+
+    />
 
     <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/b_division"
             android:text="@string/b_division"
-            android:textSize="@dimen/text_size"
-            android:layout_margin="@dimen/margin"/>
+
+           />
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/b_multiplication"
             android:text="@string/b_multiplication"
-            android:textSize="@dimen/text_size"
-            android:layout_margin="@dimen/margin"/>
+
+            />
     <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/b_delete"
             android:text="@string/b_delete"
-            android:textSize="@dimen/text_size"
-            android:layout_margin="@dimen/margin"/>
+
+            />
 </TableRow>
     <TableRow
             android:layout_height="match_parent"
@@ -79,30 +80,30 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/b_1"
                 android:text="@string/b_1"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
 
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_2"
                 android:text="@string/b_2"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_3"
                 android:text="@string/b_3"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_subtraction"
                 android:text="@string/b_subtraction"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
     </TableRow>
     <TableRow
             android:layout_height="match_parent"
@@ -113,30 +114,30 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/b_4"
                 android:text="@string/b_4"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+               />
 
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_5"
                 android:text="@string/b_5"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_6"
                 android:text="@string/b_6"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_addition"
                 android:text="@string/b_addition"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
     </TableRow>
     <TableRow
             android:layout_height="match_parent"
@@ -147,30 +148,29 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/b_7"
                 android:text="@string/b_7"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
 
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_8"
                 android:text="@string/b_8"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_9"
                 android:text="@string/b_9"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+
+                />
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_proc"
                 android:text="@string/b_proc"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+               />
     </TableRow>
     <TableRow
             android:layout_height="match_parent"
@@ -181,24 +181,21 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/b_0"
                 android:text="@string/b_0"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+               />
 
         <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_point"
                 android:text="@string/b_point"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+               />
         <com.google.android.material.button.MaterialButton
                 android:layout_span="2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/b_equally"
                 android:text="@string/b_equally"
-                android:textSize="@dimen/text_size"
-                android:layout_margin="@dimen/margin"/>
+               />
 
     </TableRow>
 </TableLayout>
