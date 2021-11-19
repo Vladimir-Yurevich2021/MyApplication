@@ -65,18 +65,22 @@ public class MainActivity extends AppCompatActivity {
         button_8.setOnClickListener(clicbutton_8);
         button_9 = findViewById(R.id.b_9);
         button_9.setOnClickListener(clicbutton_9);
-//        button_division = findViewById(R.id.b_division);
+        button_division = findViewById(R.id.b_division);
+        button_division.setOnClickListener(clicbutton_division);
 //        button_multiplication = findViewById(R.id.b_multiplication);
 //        button_addition = findViewById(R.id.b_addition);
 //        button_subtraction = findViewById(R.id.b_subtraction);
-//        button_c = findViewById(R.id.b_c);
-//        button_delete = findViewById(R.id.b_delete);
-//        button_proc = findViewById(R.id.b_proc);
-//        button_point = findViewById(R.id.b_point);
-//        button_equally = findViewById(R.id.b_equally);
+        button_c = findViewById(R.id.b_c);
+        button_c.setOnClickListener(clicbutton_c);
+        button_delete = findViewById(R.id.b_delete);
+        button_delete.setOnClickListener(clicbutton_delete);
+//      button_proc = findViewById(R.id.b_proc);
+        button_point = findViewById(R.id.b_point);
+        button_point.setOnClickListener(clicbutton_point);
+        // button_equally = findViewById(R.id.b_equally);
     }
 
-    public void setTextviewandsetnumber1(Button button) {
+    public void setTextViewAndSetNumber1(Button button) {
         double number = numbers.getNumber1();
         if (number != 0) {
             text_enter.append(button.getText());
@@ -85,64 +89,116 @@ public class MainActivity extends AppCompatActivity {
         numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
     }
 
+
     View.OnClickListener clicbutton_0 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_0);
+            setTextViewAndSetNumber1(button_0);
         }
     };
     View.OnClickListener clicbutton_1 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_1);
+            setTextViewAndSetNumber1(button_1);
         }
     };
     View.OnClickListener clicbutton_2 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_2);
+            setTextViewAndSetNumber1(button_2);
         }
     };
     View.OnClickListener clicbutton_3 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_3);
+            setTextViewAndSetNumber1(button_3);
         }
     };
     View.OnClickListener clicbutton_4 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_4);
+            setTextViewAndSetNumber1(button_4);
         }
     };
     View.OnClickListener clicbutton_5 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_5);
+            setTextViewAndSetNumber1(button_5);
         }
     };
     View.OnClickListener clicbutton_6 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_6);
+            setTextViewAndSetNumber1(button_6);
         }
     };
     View.OnClickListener clicbutton_7 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_7);
+            setTextViewAndSetNumber1(button_7);
         }
     };
     View.OnClickListener clicbutton_8 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_8);
+            setTextViewAndSetNumber1(button_8);
         }
     };
     View.OnClickListener clicbutton_9 = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            setTextviewandsetnumber1(button_9);
+            setTextViewAndSetNumber1(button_9);
         }
+    };
+    View.OnClickListener clicbutton_division = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            double number = numbers.getNumber1();
+            if (number != 0) {
+                text_enter.append(button_division.getText());
+
+            }
+        }
+    };
+    View.OnClickListener clicbutton_c = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            text_enter.setText("0");
+            numbers.setNumber1(0);
+            numbers.setNumber2(0);
+            numbers.setNumber_rezult(0);
+        }
+
+    };
+
+    View.OnClickListener clicbutton_delete = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            CharSequence chars = text_enter.getText();
+            int count = chars.length();
+            if (count == 1) {
+                text_enter.setText("0");
+                numbers.setNumber1(0);
+            } else
+
+                text_enter.setText(chars.subSequence(0, count - 1));
+            numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
+        }
+
+    };
+    View.OnClickListener clicbutton_point = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            CharSequence chars = text_enter.getText();
+            char ch = '.';
+            for (int i = 0; i < chars.length(); i++) {
+                if (ch == chars.charAt(i)) {
+                    return;//Возможная ошибка
+                }
+            }
+            text_enter.append(button_point.getText());
+            numbers.setNumber1(1);// ошибка в будущих операциях с числами
+        }
+
     };
 }
