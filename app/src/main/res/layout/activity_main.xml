@@ -8,25 +8,38 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:theme="@style/MyStyle">
-
     <TableRow
             android:layout_height="match_parent"
             android:layout_width="wrap_content"
-               android:gravity="center|end">
+            android:gravity="center">
 
         <TextView
 
                 android:id="@+id/tv_enter_number"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/tv_0"
         />
 
     </TableRow>
     <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+               android:gravity="center">
+
+        <TextView
+
+                android:id="@+id/tv_enter_number2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+        />
+
+    </TableRow>
+    <TableRow
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
-        android:gravity="center|end">
+        android:gravity="center">
         <TextView
 
                 android:id="@+id/rezult"

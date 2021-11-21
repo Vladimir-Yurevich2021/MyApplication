@@ -9,6 +9,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     private Numbers numbers;
     private TextView text_enter;
+    private TextView text_enter2;
     private TextView text_rezult;
     private Button button_0;
     private Button button_1;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         text_enter = findViewById(R.id.tv_enter_number);
+        text_enter2=findViewById(R.id.tv_enter_number2);
         text_rezult = findViewById(R.id.rezult);
         initButton();
     }
