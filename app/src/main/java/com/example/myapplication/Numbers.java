@@ -8,10 +8,10 @@ public class Numbers implements Parcelable {
     private double number2;
     private double number_rezult;
 
-    Numbers(){
-        number1=0;
-        number2=0;
-        number_rezult=0;
+    Numbers() {
+        number1 = 0;
+        number2 = 0;
+        number_rezult = 0;
 
     }
 
@@ -58,22 +58,27 @@ public class Numbers implements Parcelable {
     }
 
 
+    public double addition() {
+        return number_rezult = number1 + number2;
+    }
 
-    public void addition(){
-        number_rezult=number1+number2;
+    public double subtraction() {
+        return number_rezult = number1 - number2;
     }
-    public void subtraction(){
-        number_rezult=number1-number2;
+
+    public double multiplication() {
+        if (number2 != 0) {
+            return number_rezult = number1 * number2;
+        } else
+            return number_rezult = 0;
     }
-    public void multiplication(){
-        if (number1!=0||number2!=0){
-            number_rezult=number1*number2;
-        }else number_rezult=0;
-    }
-    public void division(){
-        if (number1!=0||number2!=0){
-            number_rezult=number1/number2;
-        }else number_rezult=0;
+
+    public double division() {
+        if (number2 != 0) {
+            return number_rezult = number1 / number2;
+        }
+        else
+            return number_rezult = 0;
     }
 
 

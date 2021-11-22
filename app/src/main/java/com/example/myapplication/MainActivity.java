@@ -6,6 +6,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     private Numbers numbers;
     private TextView text_enter;
@@ -41,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         text_enter = findViewById(R.id.tv_enter_number);
-        text_enter2=findViewById(R.id.tv_enter_number2);
+        text_enter2 = findViewById(R.id.tv_enter_number2);
         text_rezult = findViewById(R.id.rezult);
         initButton();
     }
@@ -69,9 +71,12 @@ public class MainActivity extends AppCompatActivity {
         button_9.setOnClickListener(clicbutton_9);
         button_division = findViewById(R.id.b_division);
         button_division.setOnClickListener(clicbutton_division);
-//        button_multiplication = findViewById(R.id.b_multiplication);
-//        button_addition = findViewById(R.id.b_addition);
-//        button_subtraction = findViewById(R.id.b_subtraction);
+        button_multiplication = findViewById(R.id.b_multiplication);
+        button_multiplication.setOnClickListener(clicbutton_multiplication);
+        button_addition = findViewById(R.id.b_addition);
+        button_addition.setOnClickListener(clicbutton_addition);
+        button_subtraction = findViewById(R.id.b_subtraction);
+        button_subtraction.setOnClickListener(clicbutton_subtraction);
         button_c = findViewById(R.id.b_c);
         button_c.setOnClickListener(clicbutton_c);
         button_delete = findViewById(R.id.b_delete);
@@ -79,18 +84,38 @@ public class MainActivity extends AppCompatActivity {
 //      button_proc = findViewById(R.id.b_proc);
         button_point = findViewById(R.id.b_point);
         button_point.setOnClickListener(clicbutton_point);
-        // button_equally = findViewById(R.id.b_equally);
+        button_equally = findViewById(R.id.b_equally);
+        button_equally.setOnClickListener(clicbutton_equally);
     }
 
     public void setTextViewAndSetNumber1(Button button) {
         double number = numbers.getNumber1();
-        if (number != 0) {
+        double number2 = numbers.getNumber2();
+        int tv2 = text_enter2.length();
+        if (tv2 != 0) {
+            if (number2 != 0) {
+                text_rezult.append(button.getText());
+                numbers.setNumber2(Double.parseDouble(String.valueOf(text_rezult.getText())));
+            } else text_rezult.setText(button.getText());
+            numbers.setNumber2(Double.parseDouble(String.valueOf(text_rezult.getText())));
+        } else if (number != 0) {
             text_enter.append(button.getText());
             numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
         } else text_enter.setText(button.getText());
         numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
     }
 
+    public void setTextView2(Button button) {
+
+        double d = numbers.getNumber1();
+        double d2 = numbers.getNumber2();
+        int s = text_enter2.getText().length();
+        if (d == 0 || d2 != 0 || s != 0) {
+            return;
+        }
+        text_enter2.setText(button.getText());
+
+    }
 
     View.OnClickListener clicbutton_0 = new View.OnClickListener() {
         @Override
@@ -152,20 +177,80 @@ public class MainActivity extends AppCompatActivity {
             setTextViewAndSetNumber1(button_9);
         }
     };
+    View.OnClickListener clicbutton_multiplication = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextView2(button_multiplication);
+
+
+        }
+    };
+
     View.OnClickListener clicbutton_division = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            double number = numbers.getNumber1();
-            if (number != 0) {
-                text_enter.append(button_division.getText());
+            setTextView2(button_division);
+        }
+    };
+    View.OnClickListener clicbutton_addition = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextView2(button_addition);
+        }
+    };
+    View.OnClickListener clicbutton_subtraction = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            setTextView2(button_subtraction);
+        }
+    };
 
+    View.OnClickListener clicbutton_equally = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            if (text_rezult.getText().length() == 0) {
+                return;
+            }
+            switch (String.valueOf(text_enter2.getText())) {
+                case "*":
+                    numbers.setNumber_rezult(numbers.multiplication());
+                    rezult();
+                    break;
+
+                case "/":
+                    numbers.setNumber_rezult(numbers.division());
+                    rezult();
+                    break;
+                case "+":
+                    numbers.setNumber_rezult(numbers.addition());
+                    rezult();
+                    break;
+                case "-":
+                    numbers.setNumber_rezult(numbers.subtraction());
+                    rezult();
+                    break;
             }
         }
     };
+
+    public void rezult() {
+
+
+        numbers.setNumber1(numbers.getNumber_rezult());
+        numbers.setNumber2(0);
+        text_enter.setText(String.valueOf(numbers.getNumber_rezult()));
+        text_enter2.setText("");
+        text_rezult.setText("");
+
+
+    }
+
     View.OnClickListener clicbutton_c = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             text_enter.setText("0");
+            text_enter2.setText("");
+            text_rezult.setText("");
             numbers.setNumber1(0);
             numbers.setNumber2(0);
             numbers.setNumber_rezult(0);
@@ -176,30 +261,71 @@ public class MainActivity extends AppCompatActivity {
     View.OnClickListener clicbutton_delete = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            CharSequence chars = text_enter.getText();
-            int count = chars.length();
-            if (count == 1) {
-                text_enter.setText("0");
-                numbers.setNumber1(0);
-            } else
+            if (text_rezult.getText().length() != 0) {
 
-                text_enter.setText(chars.subSequence(0, count - 1));
-            numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
+                CharSequence chars = text_rezult.getText();
+                int count = chars.length();
+                if (count == 1) {
+                    text_rezult.setText("");
+                    numbers.setNumber2(0);
+                    return;
+                } else
+
+                    text_rezult.setText(chars.subSequence(0, count - 1));
+                numbers.setNumber2(Double.parseDouble(String.valueOf(text_rezult.getText())));
+                return;
+            }
+
+            if (text_enter2.getText().length() != 0) {
+                text_enter2.setText("");
+
+                return;
+            }
+            if (text_enter.getText().length() != 0) {
+                CharSequence chars = text_enter.getText();
+
+                int count = chars.length();
+
+                if (count == 1) {
+                    text_enter.setText("0");
+                    numbers.setNumber1(0);
+                } else
+
+                    text_enter.setText(chars.subSequence(0, count - 1));
+                numbers.setNumber1(Double.parseDouble(String.valueOf(text_enter.getText())));
+
+            }
         }
 
     };
     View.OnClickListener clicbutton_point = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            if (text_rezult.getText().length() != 0) {
+                CharSequence chars2 = text_rezult.getText();
+                char ch2 = '.';
+                for (int i = 0; i < chars2.length(); i++) {
+                    if (ch2 == chars2.charAt(i)) {
+                        return;
+                    }
+                }
+                text_rezult.append(button_point.getText());
+                numbers.setNumber2(1);
+                return;
+
+            }
+            if (text_enter2.getText().length() != 0) {
+                return;
+            }
             CharSequence chars = text_enter.getText();
             char ch = '.';
             for (int i = 0; i < chars.length(); i++) {
                 if (ch == chars.charAt(i)) {
-                    return;//Возможная ошибка
+                    return;
                 }
             }
             text_enter.append(button_point.getText());
-            numbers.setNumber1(1);// ошибка в будущих операциях с числами
+            numbers.setNumber1(1);
         }
 
     };
