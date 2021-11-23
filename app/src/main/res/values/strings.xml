@@ -20,4 +20,7 @@
     <string name="b_0">0</string>
     <string name="b_point">.</string>
     <string name="b_equally">=</string>
+    <string name="my_style">My style</string>
+    <string name="default_style">Default style</string>
+    <string name="text_return">Return</string>
 </resources>
