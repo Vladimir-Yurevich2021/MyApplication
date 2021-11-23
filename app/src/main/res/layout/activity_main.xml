@@ -211,4 +211,16 @@
                />
 
     </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_change"
+            android:text="@string/b_text_change"
+            android:layout_span="4"
+    />
+    </TableRow>
 </TableLayout>

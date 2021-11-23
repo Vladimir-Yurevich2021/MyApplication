@@ -23,4 +23,5 @@
     <string name="my_style">My style</string>
     <string name="default_style">Default style</string>
     <string name="text_return">Return</string>
+    <string name="b_text_change">Change theme</string>
 </resources>
