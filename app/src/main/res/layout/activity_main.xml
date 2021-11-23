@@ -6,28 +6,221 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity"
         android:gravity="center"
-        android:orientation="horizontal">
-
-    <TableRow>
+        android:orientation="horizontal"
+        android:theme="@style/MyStyle">
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center">
 
         <TextView
-                android:gravity="center|end"
-                android:layout_width="wrap_content"
+
+                android:id="@+id/tv_enter_number"
                 android:layout_height="wrap_content"
-                android:text="Hello World!"
+                android:layout_width="match_parent"
+                android:text="@string/tv_0"
         />
 
     </TableRow>
-    <TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+               android:gravity="center">
 
         <TextView
-                android:gravity="center|end"
-                android:layout_width="wrap_content"
+
+                android:id="@+id/tv_enter_number2"
                 android:layout_height="wrap_content"
-                android:text="Hello World!"
+                android:layout_width="match_parent"
+                android:text=""
         />
 
     </TableRow>
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:gravity="center">
+        <TextView
 
+                android:id="@+id/rezult"
 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text=""
+        />
+
+    </TableRow>
+<TableRow
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        >
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/b_c"
+    android:text="@string/b_c"
+
+    />
+
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_division"
+            android:text="@string/b_division"
+
+           />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_multiplication"
+            android:text="@string/b_multiplication"
+
+            />
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_delete"
+            android:text="@string/b_delete"
+
+            />
+</TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_1"
+                android:text="@string/b_1"
+
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_2"
+                android:text="@string/b_2"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_3"
+                android:text="@string/b_3"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_subtraction"
+                android:text="@string/b_subtraction"
+
+                />
+    </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_4"
+                android:text="@string/b_4"
+
+               />
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_5"
+                android:text="@string/b_5"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_6"
+                android:text="@string/b_6"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_addition"
+                android:text="@string/b_addition"
+
+                />
+    </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_7"
+                android:text="@string/b_7"
+
+                />
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_8"
+                android:text="@string/b_8"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_9"
+                android:text="@string/b_9"
+
+                />
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_proc"
+                android:text="@string/b_proc"
+               />
+    </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_0"
+                android:text="@string/b_0"
+               />
+
+        <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_point"
+                android:text="@string/b_point"
+               />
+        <com.google.android.material.button.MaterialButton
+                android:layout_span="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b_equally"
+                android:text="@string/b_equally"
+               />
+
+    </TableRow>
+    <TableRow
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+    >
+    <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_change"
+            android:text="@string/b_text_change"
+            android:layout_span="4"
+    />
+    </TableRow>
 </TableLayout>

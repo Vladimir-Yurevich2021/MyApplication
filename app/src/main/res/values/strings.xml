@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="tv_0">0</string>
+    <string name="b_1">1</string>
+    <string name="b_2">2</string>
+    <string name="b_3">3</string>
+    <string name="b_subtraction">-</string>
+    <string name="b_c">c</string>
+    <string name="b_division">/</string>
+    <string name="b_multiplication">*</string>
+    <string name="b_delete">del</string>
+    <string name="b_4">4</string>
+    <string name="b_5">5</string>
+    <string name="b_6">6</string>
+    <string name="b_addition">+</string>
+    <string name="b_7">7</string>
+    <string name="b_8">8</string>
+    <string name="b_9">9</string>
+    <string name="b_proc">%</string>
+    <string name="b_0">0</string>
+    <string name="b_point">.</string>
+    <string name="b_equally">=</string>
+    <string name="my_style">My style</string>
+    <string name="default_style">Default style</string>
+    <string name="text_return">Return</string>
+    <string name="b_text_change">Change theme</string>
 </resources>
